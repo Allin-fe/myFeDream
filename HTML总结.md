@@ -25,46 +25,32 @@
 
 需在`head`里面添加`type`属性
 
-    <span class="hljs-tag"><<span class="hljs-title">head</span>></span>
-    <span class="hljs-tag"><<span class="hljs-title">style</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text/css"</span>></span><span class="css">
-    <span class="hljs-tag">body</span> <span class="hljs-rules">{<span class="hljs-rule"><span class="hljs-attribute">background-color</span>:<span class="hljs-value"> red</span></span></span>}
-    <span class="hljs-tag">p</span> <span class="hljs-rules">{<span class="hljs-rule"><span class="hljs-attribute">margin-left</span>:<span class="hljs-value"> <span class="hljs-number">20px</span></span></span></span>}
-    </span><span class="hljs-tag"></<span class="hljs-title">style</span>></span>
-    <span class="hljs-tag"></<span class="hljs-title">head</span>></span>
-    `</pre>
+### 4.3 外部样式
 
-    ### 4.3 外部样式
+这是最佳选择，方便管理 CSS 文件
 
-    这是最佳选择，方便管理 CSS 文件
+## 5 链接
 
-    <pre>`<span class="hljs-prompt"><head></span>
-    <link rel=<span class="hljs-string">"stylesheet"</span> type=<span class="hljs-string">"text/css"</span> href=<span class="hljs-string">"mystyle.css"</span>>
-    <span class="hljs-prompt"></head></span>
-    `</pre>
+### 5.1 定义：
 
-    ## 5 链接
+我们通过使用`<a>`标签在`HTML`中创建链接。
 
-    ### 5.1 定义：
+### 5.2 用法
 
-    我们通过使用`<a>`标签在`HTML`中创建链接。
+有两种使用 `<a>`标签的方式：
+1.通过使用 `href` 属性 - 创建指向另一个文档的链接
+2.通过使用 `name`属性 - 创建文档内的书签
+`<a href="#">Link text</a>`
 
-    ### 5.2 用法
+## 6 图片
 
-    有两种使用 `<a>`标签的方式：
+`![](#)`
 
-1.  通过使用 `href` 属性 - 创建指向另一个文档的链接
-2.  通过使用 `name`属性 - 创建文档内的书签
-    `<a href="url">Link text</a>`
+## 7 列表
 
-    ## 6 图片
+### 7.1 无序列表
 
-    `![](#)`
-
-    ## 7 列表
-
-    ### 7.1 无序列表
-
-    <pre>`<span class="hljs-tag"><<span class="hljs-title">ul</span>></span>
+    <span class="hljs-tag"><<span class="hljs-title">ul</span>></span>
     <span class="hljs-tag"><<span class="hljs-title">li</span>></span>Coffee<span class="hljs-tag"></<span class="hljs-title">li</span>></span>
     <span class="hljs-tag"><<span class="hljs-title">li</span>></span>Milk<span class="hljs-tag"></<span class="hljs-title">li</span>></span>
     <span class="hljs-tag"></<span class="hljs-title">ul</span>></span>
@@ -80,8 +66,7 @@
 
     ### 7.3 自定义列表
 
-    <pre>`<span class="hljs-tag"><<span class="hljs-title">dl</span>></span>
-    <span class="hljs-tag"><<span class="hljs-title">dt</span>></span>Coffee<span class="hljs-tag"></<span class="hljs-title">dt</span>></span>
+    <pre>`"><span class="hljs-tag"><<span class="hljs-title">dt</span>></span>Coffee<span class="hljs-tag"></<span class="hljs-title">dt</span>></span>
     <span class="hljs-tag"><<span class="hljs-title">dd</span>></span>Black hot drink<span class="hljs-tag"></<span class="hljs-title">dd</span>></span>
     <span class="hljs-tag"><<span class="hljs-title">dt</span>></span>Milk<span class="hljs-tag"></<span class="hljs-title">dt</span>></span>
     <span class="hljs-tag"><<span class="hljs-title">dd</span>></span>White cold drink<span class="hljs-tag"></<span class="hljs-title">dd</span>></span>
@@ -109,14 +94,11 @@
     ## 9 框架
 
 1.  定义：`<frameset>`
-2.  定义了框架后，文档不能包含`<body>`标签
-    <pre>`<span class="hljs-tag"><<span class="hljs-title">frameset</span> <span class="hljs-attribute">cols</span>=<span class="hljs-value">"25%,75%"</span>></span>
-       <span class="hljs-tag"><<span class="hljs-title">frame</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"frame_a.htm"</span>></span>
-       <span class="hljs-tag"><<span class="hljs-title">frame</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"frame_b.htm"</span>></span>
+2.  定义了框架后，文档不能包含`<body>`标签<pre>`<span class="hljs-tag"><<span class="hljs-title">frameset</span> <span class="hljs-attribute">cols</span>=<span class="hljs-value">"25%,75%"</span>></span>
+    <span class="hljs-tag"><<span class="hljs-title">frame</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"frame_a.htm"</span>></span>
+    <span class="hljs-tag"><<span class="hljs-title">frame</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"frame_b.htm"</span>></span>
     <span class="hljs-tag"></<span class="hljs-title">frameset</span>></span>
-    `</pre>
-
-    注意：浏览器难以抓取框架的内容
+    `</pre>注意：浏览器难以抓取框架的内容
 
     ## 10 表单
 
@@ -149,14 +131,17 @@
     <pre>`<input <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"checkbox"</span> name=<span class="hljs-string">"bike"</span>  checked/>自行车
     <input <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"checkbox"</span> name=<span class="hljs-string">"car"</span> />汽车
     `</pre>
-5.  `type="textarea"`: 文本域，用于输入多行文本
+
+    5.`type="textarea"`: 文本域，用于输入多行文本
+
     <pre>`<span class="hljs-tag"><<span class="hljs-title">textarea</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"maneywords"</span> <span class="hljs-attribute">maxlength</span>=<span class="hljs-value">10</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">"ddd"</span>></span><span class="hljs-tag"></<span class="hljs-title">textarea</span>></span>
     `</pre>
-6.  `type="hidden"`: 隐藏域，用户看不到，用于暂存数据。或者安全性校验
+
+1.  `type="hidden"`: 隐藏域，用户看不到，用于暂存数据。或者安全性校验
     <pre>`<input <span class="hljs-variable">name=</span><span class="hljs-string">"url_delete"</span> <span class="hljs-variable">type=</span><span class="hljs-string">"hidden"</span> <span class="hljs-variable">value=</span><span class="hljs-string">"/delete.php"</span> />
     <input <span class="hljs-variable">name=</span><span class="hljs-string">"csrf_token"</span> <span class="hljs-variable">type=</span><span class="hljs-string">"hidden"</span> <span class="hljs-variable">value=</span><span class="hljs-string">"a23dafd23444"</span> />
     `</pre>
-7.  select
+2.  select
     选择列表，selected属性会默认选中该项目
     <pre>`<span class="hljs-tag"><<span class="hljs-title">form</span> <span class="hljs-attribute">action</span>=<span class="hljs-value">"#"</span>></span>     <span class="hljs-tag"><<span class="hljs-title">select</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"mycar"</span>></span>
        <span class="hljs-tag"><<span class="hljs-title">option</span> <span class="hljs-attribute">value</span> =<span class="hljs-value">"volvo"</span>></span>Volvo<span class="hljs-tag"></<span class="hljs-title">option</span>></span>
