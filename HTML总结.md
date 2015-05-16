@@ -45,5 +45,11 @@
 
 ## 6 图片
 
-    <<span class="hljs-tag">img</span> src=<span class="hljs-string">"#"</span>>
+`<img>`
+
+## 7 列表
+
+```
+this is a code block
+```
     
