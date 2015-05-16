@@ -45,4 +45,5 @@
 
 ## 6 图片
 
-`![](#)`
+    <<span class="hljs-tag">img</span> src=<span class="hljs-string">"#"</span>>
+    
