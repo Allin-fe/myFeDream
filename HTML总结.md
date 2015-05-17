@@ -124,7 +124,8 @@
 4. get提交的数据在浏览器历史记录中，安全性不好
 
 ### 10.3 type类型
-1. `type="text"`: 用于输入文本。placeholder属性（可选）展示的是输入框里的提示，maxlength（可选）限制最大输入长度；
+
+1. `type="text"`: 用于输入文本。`placeholder`属性（可选）展示的是输入框里的提示，`maxlength`（可选）限制最大输入长度；
 <!-- 要加上name -->
 ```
 <input name="username" type="text" placeholder="用户名" maxlength=10 />```
@@ -133,12 +134,12 @@
 ```
 <input name="password" type="password" placeholder="密码" />```
 
-3. `type="radio"`: 单选圆圈按钮。注意：name要相同才能实现单选，value要有值
+3. `type="radio"`: 单选圆圈按钮。注意：`name`要相同才能实现单选，`value`要有值
 ```
 <input type="radio" name="sex" value="male" /> 男
 <input type="radio" name="sex" value="female" /> 女```
 
-4. `type="checkbox"`: 复选框。加checked属性会默认选上。提交时，如果选中（如bike），则bike=on
+4. `type="checkbox"`: 复选框。加`checked`属性会默认选上。提交时，如果选中（如bike），则bike=on
 ```
 <input type="checkbox" name="bike"  checked/>自行车
 <input type="checkbox" name="car" />汽车```
@@ -147,13 +148,13 @@
 ```
 <textarea name="maneywords" maxlength=10 placeholder="ddd"></textarea>```
 
-6. `type="hidden"`: 隐藏域，用户看不到，用于暂存数据。或者安全性校验
+6. `type="hidden"`: 隐藏域，用户看不到，用于暂存数据,或者安全性校验
 ```
 <input name="url_delete" type="hidden" value="/delete.php" />
 <input name="csrf_token" type="hidden" value="12312312" />```
 
 7. select
-选择列表，selected属性会默认选中该项目
+选择列表，`selected`属性会默认选中该项目
 ```
 <form action="#"> 
     <select name="mycar">
