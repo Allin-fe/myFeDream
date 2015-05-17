@@ -150,7 +150,7 @@
 6. `type="hidden"`: 隐藏域，用户看不到，用于暂存数据。或者安全性校验
 ```
 <input name="url_delete" type="hidden" value="/delete.php" />
-<input name="csrf_token" type="hidden" value="a23dafd23444" />```
+<input name="csrf_token" type="hidden" value="12312312" />```
 
 7. select
 选择列表，selected属性会默认选中该项目
